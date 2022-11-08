@@ -39,6 +39,7 @@ onMounted(async () => {
     }
 
     &__inner {
+        padding: 0 15px;
         img {
             width: 1000px;
             height: 500px;

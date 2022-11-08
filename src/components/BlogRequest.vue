@@ -29,6 +29,10 @@ defineProps(['items'])
 <style lang="scss">
 .blog {
     padding-bottom: 100px;
+
+    &__content {
+        padding: 0 30px;
+    }
     &__item {
         display: flex;
         gap: 30px;
@@ -37,6 +41,15 @@ defineProps(['items'])
             width: 450px;
             height: 270px;
             object-fit: cover;
+        }
+
+        @media screen and (max-width: 827px) {
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -49,12 +62,19 @@ defineProps(['items'])
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 827px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
         font-size: 18px;
         font-weight: 300;
         flex: 1;
+        @media screen and (max-width: 827px) {
+            margin-bottom: 10px;
+        }
     }
 }
 .btn {
