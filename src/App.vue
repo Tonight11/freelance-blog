@@ -1,30 +1,44 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+    <div class="wrapper">
+        <component :is="layouts[layout]"></component>
+        <the-footer></the-footer>
+    </div>
 </template>
 
+<script setup>
+import AuthLayout from '@/layout/AuthLayout'
+import HomeLayout from '@/layout/HomeLayout'
+import TheFooter from './components/TheFooter.vue'
+import { useRoute } from 'vue-router'
+import { computed } from '@vue/reactivity'
+
+const route = useRoute()
+
+const layout = computed(() => route.meta.layout)
+const layouts = {
+    AuthLayout,
+    HomeLayout,
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-nav {
-  padding: 30px;
+html {
+    scroll-behavior: smooth;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+body.lock {
+    overflow-y: hidden;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 </style>
