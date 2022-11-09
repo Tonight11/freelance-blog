@@ -22,12 +22,27 @@
                     </div>
                 </div>
                 <div class="footer__sec-adres">
-                    GEFCO Forwarding Australia and New Zealand Headquarters Unit
-                    7, 2-12 Beauchamp Road 2019 Banksmeadow - Sydney AUSTRALIA
+                    POLITRANS LOGIST SRL <br />
+                    Str. Ciorescu 1 mun. Chisinau, MD-4839 Terminal Vamal
+                    Cricova Republica Moldova <br />
+                    Departament Transport <br />
+                    +373 69994448 <br />
+                    info@plt.md <br />
+                    Departament Broker Vamal <br />+373 68006633 <br />
+                    broker@plt.md
                 </div>
                 <div class="footer__first-adres">
-                    GEFCO Forwarding Australia and New Zealand Headquarters Unit
-                    7, 2-12 Beauchamp Road 2019 Banksmeadow - Sydney AUSTRALIA
+                    S. C. PLT TRANSPORT S.R.L.
+                    <br />
+                    Str. Liliacului Nr. 47 RO-737512 Satu Nou Com. Muntenii de
+                    Sus Vaslui , Romania
+                    <br />
+
+                    Departament Transport
+                    <br />
+                    +40 730 271 012
+                    <br />
+                    info@plt.md
                 </div>
             </div>
         </div>
@@ -55,13 +70,18 @@
             flex-direction: column;
             align-items: start;
             row-gap: 30px;
+            font-size: 16px;
         }
     }
 
     &__first {
         max-width: 700px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
+
+            border-bottom: 2px solid white;
+            padding-bottom: 30px;
         }
 
         img {
@@ -76,9 +96,13 @@
     &__sec-adres {
         max-width: 220px;
         font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         position: relative;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
+            border-bottom: 2px solid white;
+            padding-bottom: 30px;
+            font-size: 16px;
         }
 
         &::before {
@@ -103,6 +127,9 @@
         font-size: 20px;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
+            border-bottom: 2px solid white;
+            padding-bottom: 30px;
+            font-size: 16px;
         }
 
         &::before {

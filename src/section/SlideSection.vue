@@ -22,7 +22,7 @@
                         temperature sensitive shipments, valuable shipments,
                         dangerous goods and radioactive materials.
                     </p>
-                    <a class="main-about-more" href="en\about-us.html"
+                    <a class="main-about-more" href="#con"
                         >More about us <span class="arrow-right"></span
                     ></a>
                 </div>
