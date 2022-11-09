@@ -85,7 +85,8 @@ const formSubmit = async () => {
         .then((response) => {
             return response.json()
         })
-        .then(() => {
+        .then((data) => {
+            console.log(data)
             hello.value = true
 
             setTimeout(close, 1000)
