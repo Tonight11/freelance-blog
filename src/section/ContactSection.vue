@@ -19,7 +19,29 @@
                 </div>
             </div>
             <app-modal :visible="visible" @close="close">
-                <AuthRequest tel />
+                <div class="lds-dual-ring" v-if="load === true"></div>
+                <form
+                    v-else-if="hello !== true"
+                    class="form"
+                    @submit.prevent="formSubmit"
+                >
+                    <input
+                        v-model="email"
+                        type="text"
+                        name="email"
+                        placeholder="Your name"
+                        required
+                    />
+                    <input
+                        v-model="tel"
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone"
+                        required
+                    />
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+                <div style="color: darkgreen" v-else>Success!!!</div>
             </app-modal>
         </div>
     </div>
@@ -27,10 +49,13 @@
 
 <script setup>
 import AppModal from '@/UI/AppModal.vue'
-import AuthRequest from '@/components/AuthRequest.vue'
 import { ref } from 'vue'
 
 const visible = ref(false)
+const load = ref(false)
+const email = ref('')
+const tel = ref('')
+const hello = ref(false)
 
 const open = () => {
     visible.value = true
@@ -40,6 +65,37 @@ const open = () => {
 const close = () => {
     visible.value = false
     document.body.classList.remove('lock')
+    hello.value = false
+}
+
+const formSubmit = async () => {
+    load.value = true
+    fetch('https://formsubmit.co/ajax/tonight0bayastan@gmail.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+        },
+        body: JSON.stringify({
+            email: email.value,
+            phone: tel.value,
+            _template: 'table',
+        }),
+    })
+        .then((response) => {
+            return response.json()
+        })
+        .then(() => {
+            hello.value = true
+
+            setTimeout(close, 1000)
+        })
+        .catch((error) => console.log(error))
+        .finally(() => {
+            load.value = false
+            email.value = ''
+            tel.value = ''
+        })
 }
 </script>
 
@@ -134,6 +190,32 @@ const close = () => {
     &:hover {
         opacity: 0.6;
         text-decoration: none;
+    }
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #336b46;
+    border-color: #336b46 transparent #336b46 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 </style>

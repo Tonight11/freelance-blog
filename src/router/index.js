@@ -46,6 +46,7 @@ const router = createRouter({
 
         if (burgerMenu.isActive === true) {
             burgerMenu.toggle()
+            document.body.classList.remove('modal-open')
         }
 
         if (to.hash) {

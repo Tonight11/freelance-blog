@@ -1,6 +1,6 @@
 <template>
     <div class="blog">
-        <the-header @create="newPost"></the-header>
+        <the-header @create="newPost" create></the-header>
         <div class="blog__title">NEWS</div>
         <div class="blog__content">
             <blog-request

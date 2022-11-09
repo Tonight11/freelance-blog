@@ -3,13 +3,6 @@
     <form class="form" action="#" @submit.prevent="authWithEmail">
         <input v-model="email" type="text" placeholder="Your name" required />
         <input
-            v-model="phone"
-            v-if="tel"
-            type="tel"
-            placeholder="Your phone"
-            required
-        />
-        <input
             v-model="password"
             v-if="pass"
             type="password"
@@ -25,12 +18,10 @@ import { defineProps, ref } from 'vue'
 import { useAuthStore } from '@/store/authStore'
 
 defineProps({
-    tel: Boolean,
     pass: Boolean,
 })
 
 const email = ref()
-const phone = ref()
 const password = ref()
 
 const err = ref(null)

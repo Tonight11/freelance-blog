@@ -19,6 +19,8 @@ import { usePostStore } from '@/store/postStore'
 const post = usePostStore()
 const props = defineProps(['id'])
 
+
+
 const blog = ref(null)
 onMounted(async () => {
     try {

@@ -7,7 +7,7 @@ export const useBurgerStore = defineStore('burger', {
     actions: {
         toggle() {
             this.isActive = !this.isActive
-            document.body.classList.toggle('lock')
+            document.body.classList.remove('lock')
         },
     },
 })
