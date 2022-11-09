@@ -95,14 +95,13 @@
 
     &__sec-adres {
         max-width: 220px;
-        font-size: 20px;
+        font-size: 16px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         position: relative;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
             border-bottom: 2px solid white;
             padding-bottom: 30px;
-            font-size: 16px;
         }
 
         &::before {
@@ -124,12 +123,11 @@
         max-width: 220px;
 
         position: relative;
-        font-size: 20px;
+        font-size: 16px;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
             border-bottom: 2px solid white;
             padding-bottom: 30px;
-            font-size: 16px;
         }
 
         &::before {
