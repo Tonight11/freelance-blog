@@ -30,7 +30,7 @@
                         Regular employee training on all levels
                     </div>
                 </div>
-                <img class="license__img" src="" alt="" />
+                <img class="license__img" src="@/assets/slider3.jpg" alt="" />
             </div>
         </div>
     </div>
@@ -45,14 +45,19 @@
     &__inner {
         display: flex;
         gap: 50px;
-        justify-content: space-between;
+        // justify-content: space-between;
 
-        @media screen and (max-width: 848px) {
+        @media screen and (max-width: 998px) {
             flex-direction: column;
         }
     }
     &__left {
-        max-width: 800px;
+        flex: 0 1 50%;
+        width: 50%;
+        @media screen and (max-width: 998px) {
+            width: 100%;
+            flex: 0 1 100%;
+        }
     }
 
     &__title {
@@ -78,12 +83,14 @@
     }
 
     &__img {
-        width: 800px;
+        flex: 0 1 50%;
+        width: 50%;
         height: 500px;
         background-color: grey;
         object-fit: cover;
-        @media screen and (max-width: 848px) {
+        @media screen and (max-width: 998px) {
             width: 100%;
+            flex: 0 1 100%;
         }
     }
 }

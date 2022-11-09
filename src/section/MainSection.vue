@@ -281,7 +281,7 @@ onMounted(() => {
     mobile.forEach((d) => d.classList.remove('active'))
     document
         .querySelectorAll(`[href='${route.hash}']`)
-        .forEach((i) => i.closest('li').classList.add('active'))
+        .forEach((i) => i.parentNode.classList.add('active'))
 
     link(nav)
     link(mobile)

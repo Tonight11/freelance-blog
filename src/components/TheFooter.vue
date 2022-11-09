@@ -44,7 +44,7 @@
     font-weight: 700;
 
     .footer__container {
-        max-width: 1280px;
+        max-width: 1440px;
     }
     &__inner {
         display: flex;
@@ -59,13 +59,13 @@
     }
 
     &__first {
-        max-width: 500px;
+        max-width: 700px;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
         }
 
         img {
-            margin-bottom: 30px;
+            margin: 0 auto 30px;
         }
     }
 
@@ -76,8 +76,23 @@
     &__sec-adres {
         max-width: 220px;
         font-size: 20px;
+        position: relative;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: white;
+            height: 100%;
+            top: 0;
+            left: -20px;
+
+            @media screen and (max-width: 1188px) {
+                content: none;
+            }
         }
     }
 
@@ -97,8 +112,7 @@
             background-color: white;
             height: 100%;
             top: 0;
-            left: -50%;
-            transform: translateX(50%);
+            left: -20px;
 
             @media screen and (max-width: 1188px) {
                 content: none;

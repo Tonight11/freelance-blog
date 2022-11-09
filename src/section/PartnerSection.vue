@@ -1,6 +1,6 @@
 <template>
     <section id="awards" class="partners ptb5 plr5">
-        <p class="partners-header block_header">Партнеры</p>
+        <p class="partners-header block_header">Partners</p>
         <div class="partners-flex_container wow rotateInUpLeft">
             <img src="@/assets/partner/1.png" alt="" />
             <img src="@/assets/partner/2.jpg" alt="" />

@@ -70,7 +70,7 @@ const items = ref([
 
     &__title {
         padding: 15px 0px 50px;
-        font-size: 28px;
+        font-size: 36px;
         font-weight: 700;
         background-color: #f6f6f6;
         text-align: center;
@@ -102,19 +102,26 @@ const items = ref([
         border: 5px solid #ffcd00;
         color: white;
 
+        transition: all 0.3s linear;
+
+        &:hover {
+            transform: translate(-5px, -5px);
+        }
+
         svg {
-            width: 35px;
-            height: 35px;
+            width: 45px;
+            height: 45px;
         }
     }
 
     &__name {
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 800;
+        margin-bottom: 10px;
     }
 
     &__text {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         margin-bottom: 100px;
     }

@@ -91,6 +91,16 @@ const items = ref([
         display: flex;
         flex-direction: column;
         height: 100%;
+        border: 2px solid rgb(65, 117, 83);
+        padding: 15px;
+        border-radius: 11px;
+
+        transition: all 0.3s linear;
+
+        &:hover {
+            transform: translate(-5px, -5px);
+        }
+
         img {
             width: 100%;
             height: 400px;

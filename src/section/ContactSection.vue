@@ -123,7 +123,10 @@ const formSubmit = async () => {
 }
 
 .contact {
-    margin-top: 80px;
+    margin-top: 40px;
+    padding: 40px 0 40px;
+    border-top: 6px solid #336b46;
+    border-bottom: 6px solid #336b46;
     &__inner {
         display: flex;
         align-items: center;
