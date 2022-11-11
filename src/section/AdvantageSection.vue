@@ -1,7 +1,7 @@
 <template>
     <div class="advantage">
         <div class="advantage__title">
-            We invent lasting supply chain solutions
+            {{ $t('advantage.title') }}
         </div>
         <div class="container">
             <div class="advantage__inner">
@@ -12,8 +12,12 @@
                         :key="item.icon"
                     >
                         <div class="advantage__item">
-                            <div class="advantage__name">{{ item.title }}</div>
-                            <div class="advantage__text">{{ item.text }}</div>
+                            <div class="advantage__name">
+                                {{ $t(`advantage.${item.title}.title`) }}
+                            </div>
+                            <div class="advantage__text">
+                                {{ $t(`advantage.${item.title}.text`) }}
+                            </div>
                             <Icon :icon="item.icon" />
                         </div>
                     </div>
@@ -29,33 +33,27 @@ import { ref } from 'vue'
 
 const items = ref([
     {
-        title: 'Over 15000',
-        text: 'shipments annually',
+        title: 'first',
         icon: 'bx:world',
     },
     {
-        title: 'More than 500',
-        text: 'long term customers',
+        title: 'second',
         icon: 'bi:filetype-doc',
     },
     {
-        title: '55',
-        text: 'employees',
+        title: 'third',
         icon: 'akar-icons:people-group',
     },
     {
-        title: 'Bus',
-        text: 'lorem',
+        title: 'fourth',
         icon: 'cil:bus-alt',
     },
     {
-        title: '532',
-        text: 'annually',
+        title: 'five',
         icon: 'carbon:earth-americas-filled',
     },
     {
-        title: 'Over 15000',
-        text: 'shipments annually',
+        title: 'six',
         icon: 'file-icons:sandbox',
     },
 ])

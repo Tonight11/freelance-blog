@@ -11,6 +11,9 @@ import HomeLayout from '@/layout/HomeLayout'
 import TheFooter from './components/TheFooter.vue'
 import { useRoute } from 'vue-router'
 import { computed } from '@vue/reactivity'
+import { useI18n } from 'vue-i18n'
+// eslint-disable-next-line
+const { t } = useI18n({ useScope: 'global' })
 
 const route = useRoute()
 
@@ -40,5 +43,12 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-8 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
 }
 </style>

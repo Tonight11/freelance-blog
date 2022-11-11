@@ -4,30 +4,25 @@
             <div class="license__inner">
                 <div class="license__left">
                     <div class="license__title">
-                        NEVER COMPROMISE ON QUALITY
+                        {{ $t('license.title') }}
                     </div>
                     <div class="license__def-text">
-                        Our quality and environmental management system is
-                        certified according to DIN EN ISO 9001 and 14001
+                        {{ $t('license.first') }}
                     </div>
                     <div class="license__un-text">
-                        Video security in warehouses & GPS location of all
-                        vehicles
+                        {{ $t('license.sec') }}
                     </div>
                     <div class="license__def-text">
-                        Certified Authorised Economic Operator (AEO F)
+                        {{ $t('license.third') }}
                     </div>
                     <div class="license__un-text">
-                        HACCP concept with risk assessment in compliance with
-                        legal requirements
+                        {{ $t('license.fourth') }}
                     </div>
                     <div class="license__def-text">
-                        Member of German logistics-industry security initiative
-                        Schutz-und Aktionsgemeinschaft zur Erhöhung der
-                        Sicherheit in der Spedition (s.a.f.e)
+                        {{ $t('license.five') }}
                     </div>
                     <div class="license__un-text">
-                        Regular employee training on all levels
+                        {{ $t('license.six') }}
                     </div>
                 </div>
                 <img class="license__img" src="@/assets/slider3.jpg" alt="" />

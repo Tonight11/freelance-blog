@@ -1,73 +1,28 @@
 <template>
     <section id="awards" class="partners ptb5 plr5">
-        <p class="partners-header block_header">Partners</p>
+        <p class="partners-header block_header">{{ $t(`partner`) }}</p>
         <div class="partners-flex_container wow rotateInUpLeft">
-            <img src="@/assets/partner/1.png" alt="" />
-            <img src="@/assets/partner/2.jpg" alt="" />
-            <img src="@/assets/partner/3.png" alt="" />
+            <img src="@/assets/partner/1.jpg" alt="" />
+            <img src="@/assets/partner/2.png" alt="" />
+            <img src="@/assets/partner/3.jpg" alt="" />
             <img src="@/assets/partner/4.png" alt="" />
+        </div>
+        <div class="partners-flex_container wow rotateInUpLeft">
             <img src="@/assets/partner/5.png" alt="" />
             <img src="@/assets/partner/6.jpg" alt="" />
-            <img src="@/assets/partner/7.png" alt="" />
-        </div>
-        <div class="partners-flex_container wow rotateInUpLeft">
+            <img src="@/assets/partner/7.jpg" alt="" />
             <img src="@/assets/partner/8.png" alt="" />
-            <img src="@/assets/partner/10.png" alt="" />
-            <img src="@/assets/partner/10.png" alt="" />
-            <img src="@/assets/partner/11.png" alt="" />
-            <img src="@/assets/partner/12.png" alt="" />
-            <img src="@/assets/partner/13.png" alt="" />
-            <img src="@/assets/partner/14.png" alt="" />
         </div>
-        <div class="partners-flex_container wow rotateInUpLeft">
-            <img src="@/assets/partner/15.png" alt="" />
-            <img src="@/assets/partner/16.png" alt="" />
-            <img src="@/assets/partner/17.png" alt="" />
-            <img src="@/assets/partner/18.jpg" alt="" />
-            <img src="@/assets/partner/19.png" alt="" />
-            <img src="@/assets/partner/20.png" alt="" />
-            <img src="@/assets/partner/21.png" alt="" />
-        </div>
-        <div class="partners-flex_container wow rotateInUpLeft">
-            <img src="@/assets/partner/22.png" alt="" />
-            <img src="@/assets/partner/23.png" alt="" />
-            <img src="@/assets/partner/24.png" alt="" />
-            <img src="@/assets/partner/25.png" alt="" />
-            <img src="@/assets/partner/26.png" alt="" />
-            <img src="@/assets/partner/27.jpg" alt="" />
-            <img src="@/assets/partner/28.png" alt="" />
-            <img src="@/assets/partner/29.png" alt="" />
-        </div>
+
         <div class="partners-mobile">
-            <img class="wow zoomIn" src="@/assets/partner/1.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/2.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/3.png" alt="" />
+            <img class="wow zoomIn" src="@/assets/partner/1.jpg" alt="" />
+            <img class="wow zoomIn" src="@/assets/partner/2.png" alt="" />
+            <img class="wow zoomIn" src="@/assets/partner/3.jpg" alt="" />
             <img class="wow zoomIn" src="@/assets/partner/4.png" alt="" />
             <img class="wow zoomIn" src="@/assets/partner/5.png" alt="" />
             <img class="wow zoomIn" src="@/assets/partner/6.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/7.png" alt="" />
+            <img class="wow zoomIn" src="@/assets/partner/7.jpg" alt="" />
             <img class="wow zoomIn" src="@/assets/partner/8.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/10.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/10.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/11.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/12.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/13.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/14.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/15.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/16.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/17.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/18.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/19.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/20.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/21.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/22.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/23.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/24.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/25.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/26.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/27.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/28.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/29.png" alt="" />
         </div>
     </section>
 </template>
@@ -95,7 +50,6 @@
 }
 .partners {
     background: #ecf0f2;
-    height: 100vh;
 }
 
 .partners-header {
@@ -125,7 +79,7 @@
 }
 
 .partners-flex_container img {
-    width: 7rem;
+    width: 8rem;
     margin: 0 2.5rem;
     transition: all 0.3s ease-in-out;
 }
@@ -169,7 +123,6 @@
         margin: 2rem 0;
     }
     .partners-flex_container img {
-        width: 5rem;
         margin: 0 2rem;
     }
 }

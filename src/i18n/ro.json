@@ -1,0 +1,88 @@
+{
+    "header": {
+        "nav": {
+            "home": "ACASĂ",
+            "servives": "SERVICII",
+            "aboutus": "DESPRE NOI",
+            "contacts": "CONTACTE",
+            "blog": "BLOG",
+            "back": "BACK"
+        },
+        "title": {
+            "main": "POLITRANS LOGIST ",
+            "color": "te salută!"
+        },
+        "subtitle": "POLITRANS LOGIST vă oferă servicii de transport si expediții rutiere de mărfuri pe rute internaționale pentru orice tip de mărfuri si pentru orice destinații.",
+        "btn-main": "OUR SERVICES",
+        "btn-sec": "CONTACT US",
+        "scroll": "Derulează în jos"
+    },
+    "card": {
+        "title": "POLITRANS LOGIS",
+        "subtitle": "Este partenerul Dumneavoastră de încredere în domeniul serviciilor de transport național și internațional de mărfuri, servicii de logistică, depozitare și formalități vamale la import și export .",
+        "card": {
+            "first": "Servicii de Import/Export",
+            "second": "Servicii de Brokeraj",
+            "third": "Consolidarea Mărfurilor",
+            "fourth": "Servicii de Depozitare",
+            "five": "Servicii de Transport Cu și Fără Frigidere"
+        }
+    },
+    "we": {
+        "title": "DESPRE NOI",
+        "strong": "Compania POLITRANS LOGIST SRL a fost fondata in anul 1995.",
+        "text": "Suntem membrul titular al Asociației Transportului Auto Internațional din Moldova si membru al Camerei de Comerț Moldo-Americane. POLITRANS LOGIST SRL vă oferă servicii de transport si expediții rutiere de mărfuri pe rute internaționale pentru orice tip de mărfuri si pentru orice destinații. Echipa noastră de profesioniști cu experiență vastă în industria transporturilor internaționale de marfuri asigură integral suportul necesar unor astfel de servicii si va asigura in permanență soluțiile optime pentru cerințele Dvs. Oferim servicii de transport național si internațional de mărfuri, servicii de logistică, depozitare si formalități vamale la import si export . POLITRANS LOGIST ofera clienților soluții optime, asigurând standarde înalte la fiecare etapă operationala. Garantăm servicii rapide si eficiente pentru toate tipurile de transport marfar si formalități vamale.",
+        "btn": "Contactează-ne"
+    },
+    "license": {
+        "title": " POLITRANS LOGIST Servicii de Calitate",
+        "first": "Our quality and environmental management system is certified according to DIN EN ISO 9001 and 14001 ",
+        "sec": "Video security in warehouses & GPS location of all vehicles ",
+        "third": "Certified Authorised Economic Operator (AEO F) ",
+        "fourth": "HACCP concept with risk assessment in compliance with legal requirements ",
+        "five": "Member of German logistics-industry security initiative Schutz-und Aktionsgemeinschaft zur Erhöhung der Sicherheit in der Spedition (s.a.f.e) ",
+        "six": "Regular employee training on all levels"
+    },
+    "advantage": {
+        "title": "Inventăm soluții de lungă durată pentru lanțul de aprovizionare",
+        "first": {
+            "title": "Peste 10000",
+            "text": "Expedieri anual"
+        },
+        "second": {
+            "title": "Peste 100",
+            "text": "Clienți pe termen lung"
+        },
+        "third": {
+            "title": "30",
+            "text": "Angajați"
+        },
+        "fourth": {
+            "title": "40",
+            "text": "Camioane"
+        },
+        "five": {
+            "title": "28",
+            "text": "Țări"
+        },
+        "six": {
+            "title": "25",
+            "text": "Ani pe piață"
+        }
+    },
+    "partner": "Parteneri",
+    "contact": {
+        "title": "Contact us",
+        "customer": "SUNT CLIENT",
+        "supplier": "SUNT FURNIZOR",
+        "job": "Caut un loc de muncă"
+    },
+    "trust": {
+        "title": "ДОВЕРИЕ ТРЕБУЕТ ПРИВЕРЖЕННОСТИ",
+        "textF": "AFLĂ ȘI SINGUR!",
+        "textS": "ECHIPA TA POLITRANS LOGIST"
+    },
+    "footer": {
+        "main": "Oferim servicii de transport național si internațional de mărfuri, servicii de logistică, depozitare si formalități vamale la import si export"
+    }
+}

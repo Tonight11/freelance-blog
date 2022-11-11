@@ -2498,13 +2498,14 @@ a.services-back-button:hover {
 .mobile-languages ul li {
     display: inline-block;
     margin-right: 16px;
+    color: white;
 }
 
 .mobile-languages ul li:last-child {
     margin-right: 0px;
 }
 
-.mobile-languages ul li span {
+.mobile-languages ul li.active {
     border: 2px solid #f3b88d;
     box-sizing: border-box;
     border-radius: 4px;

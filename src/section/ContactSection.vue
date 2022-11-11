@@ -4,16 +4,16 @@
             <div class="contact__inner">
                 <img src="@/assets/pp.jpg" alt="group" />
                 <div class="contact__content">
-                    <h2 class="contact__title">Contact us</h2>
+                    <h2 class="contact__title">{{ $t('contact.title') }}</h2>
                     <div class="contact__btns">
                         <button @click="open" class="contact-btn">
-                            I AM A CUSTOMER
+                            {{ $t('contact.customer') }}
                         </button>
                         <button @click="open" class="contact-btn">
-                            I AM A SUPPLIER
+                            {{ $t('contact.supplier') }}
                         </button>
                         <button @click="open" class="contact-btn">
-                            I AM A JOB APPLICANT
+                            {{ $t('contact.job') }}
                         </button>
                     </div>
                 </div>

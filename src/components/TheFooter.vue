@@ -5,20 +5,7 @@
                 <div class="footer__first">
                     <img src="@/assets/logo.png" alt="logo" />
                     <div class="footer__text">
-                        GEFCO joins a leading global logistics provider: CEVA
-                        Logistics. Today, we are a global workforce of 110,000
-                        people across 1,300 sites in more than 170 countries.
-                        CEVA Logistics, part of the CMA CGM Group, is
-                        headquartered in Marseille, France. With the addition of
-                        GEFCO, CEVA gains a stronger European presence and
-                        enhanced capabilities in automotive logistics, contract
-                        logistics and ground transport. We are now one of the
-                        largest logistics players in Europe: #2 in FVL, #4 in
-                        CL, #7 in Ground transport. In addition, CEVA Logistics
-                        is the 4th global provider of contract logistics
-                        services. Together, we expect our global 2022 revenue to
-                        reach $18 billion as we move closer to attaining our
-                        vision of becoming a Top 5 global 3PL.
+                        {{ $t('footer.main') }}
                     </div>
                 </div>
                 <div class="footer__sec-adres">

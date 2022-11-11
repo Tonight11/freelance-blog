@@ -3,27 +3,13 @@
         <div class="container">
             <div class="main-about">
                 <div class="main-about-content">
-                    <h2>WHO WE ARE</h2>
-
-                    <p><strong>Our Mission &amp; Vision</strong></p>
-
+                    <h2>{{ $t('we.title') }}</h2>
                     <p>
-                        <strong
-                            >Gamma Logistics is a medium-sized company with
-                            international competence.<br />
-                            Since 2003.</strong
-                        >
+                        <strong>{{ $t('we.strong') }}</strong>
                     </p>
-
-                    <p>
-                        Full-Service-Logistics Provider with a global
-                        partnership network. Specialist in complex logistics
-                        solution for general goods, household goods, time and
-                        temperature sensitive shipments, valuable shipments,
-                        dangerous goods and radioactive materials.
-                    </p>
+                    <p>{{ $t('we.text') }}</p>
                     <a class="main-about-more" href="#con"
-                        >More about us <span class="arrow-right"></span
+                        >{{ $t('we.btn') }} <span class="arrow-right"></span
                     ></a>
                 </div>
 
@@ -70,6 +56,6 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel'
 }
 
 .first {
-    background-image: url('@/assets/1.jpg');
+    background-image: url('@/assets/1.png');
 }
 </style>

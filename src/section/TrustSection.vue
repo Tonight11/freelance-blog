@@ -7,10 +7,10 @@
                         <img src="@/assets/logo.png" alt="logo" />
                     </div>
                     <div class="trust__info">
-                        <div class="trust__name">TRUST DEMANDS COMMITMENT</div>
+                        <div class="trust__name">{{ $t(`trust.title`) }}</div>
                         <div class="trust__text">
-                            FIND OUT FOR YOURSELF! <br />
-                            YOUR EMONS-TEAM
+                            {{ $t('trust.textF') }} <br />
+                            {{ $t('trust.textS') }}
                         </div>
                     </div>
                 </div>
@@ -46,10 +46,10 @@
     &__logo {
         background-color: rgba(245, 69, 69, 0.7);
 
-		padding: 20px;
-		img {
-			margin: 0 auto;
-		}
+        padding: 20px;
+        img {
+            margin: 0 auto;
+        }
     }
 
     &__info {

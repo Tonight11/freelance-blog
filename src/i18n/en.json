@@ -1,0 +1,88 @@
+{
+    "header": {
+        "nav": {
+            "home": "HOME",
+            "servives": "SERVICES",
+            "aboutus": "ABOUT US",
+            "contacts": "CONTACTS",
+            "blog": "BLOG",
+            "back": "BACK"
+        },
+        "title": {
+            "main": "POLITRANS LOGIST",
+            "color": "say hello!"
+        },
+        "subtitle": "POLITRANS LOGIST offers international road freight transport and forwarding services for any type of goods and for any destination.",
+        "btn-main": "OUR SERVICES",
+        "btn-sec": "CONTACT US",
+        "scroll": "Scroll down"
+    },
+    "card": {
+        "title": "POLITRANS LOGIST",
+        "subtitle": "Is your reliable partner in the field of national and international goods transport services, logistics services, storage and customs formalities for import and export.",
+        "card": {
+            "first": "Import/Export services",
+            "second": "Brokerage Services",
+            "third": "Cargo consolidation",
+            "fourth": "Storage Services",
+            "five": "Transport services with and without refrigerators"
+        }
+    },
+    "we": {
+        "title": "WHO WE ARE",
+        "strong": "POLITRANS LOGIST SRL was founded in 1995.",
+        "text": "We are a full member of the Association of International Road Carriers of Moldova and a member of the Moldovan-American Chamber of Commerce. POLITRANS LOGIST SRL offers international road freight transport and forwarding services for any type of goods and for any destination. Our team of professionals has a vast experience in the sphere of international freight transport and provides the necessary support for such services, offering optimal solutions for your requirements. We offer national and international freight transport services, logistics services, warehousing and customs clearance services for import and export. POLITRANS LOGIST offers to its customers optimal solutions, ensuring high standards at every operational stage. We guarantee fast and efficient services for all types of freight transport and customs formalities.",
+        "btn": "Contact us"
+    },
+    "license": {
+        "title": "POLITRANS LOGIST Quality services",
+        "first": "Our quality and environmental management system is certified according to DIN EN ISO 9001 and 14001 ",
+        "sec": "Video security in warehouses & GPS location of all vehicles ",
+        "third": "Certified Authorised Economic Operator (AEO F) ",
+        "fourth": "HACCP concept with risk assessment in compliance with legal requirements ",
+        "five": "Member of German logistics-industry security initiative Schutz-und Aktionsgemeinschaft zur Erhöhung der Sicherheit in der Spedition (s.a.f.e) ",
+        "six": "Regular employee training on all levels"
+    },
+    "advantage": {
+        "title": "We invent lasting supply chain solutions",
+        "first": {
+            "title": "Over 10000",
+            "text": "shipments annually"
+        },
+        "second": {
+            "title": "More than 100",
+            "text": "long term customers"
+        },
+        "third": {
+            "title": "30",
+            "text": "employees"
+        },
+        "fourth": {
+            "title": "40",
+            "text": "Trucks"
+        },
+        "five": {
+            "title": "28",
+            "text": "Countries"
+        },
+        "six": {
+            "title": "25",
+            "text": "Years on the market"
+        }
+    },
+    "partner": "Partners",
+    "contact": {
+        "title": "Contact us",
+        "customer": "I AM A CUSTOMER",
+        "supplier": "I AM A SUPPLIER",
+        "job": "I AM A JOB APPLICANT"
+    },
+    "trust": {
+        "title": "TRUST DEMANDS COMMITMENT",
+        "textF": "FIND OUT FOR YOURSELF!",
+        "textS": "YOUR EMONS-TEAM"
+    },
+    "footer": {
+        "main": "We offer national and international freight transport services, logistics services, warehousing and customs clearance services for import and export."
+    }
+}

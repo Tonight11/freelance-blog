@@ -17,108 +17,43 @@
                     <div class="mobile-menu">
                         <ul>
                             <li class="active">
-                                <a href="#home">Home</a>
+                                <a href="#home">{{ $t('header.nav.home') }}</a>
                             </li>
                             <li class="">
-                                <a href="#card">Services</a>
+                                <a href="#card">{{
+                                    $t('header.nav.servives')
+                                }}</a>
                             </li>
                             <li class="">
-                                <a href="#slide">About us</a>
+                                <a href="#slide">{{
+                                    $t('header.nav.aboutus')
+                                }}</a>
                             </li>
 
-                            <li class=""><a href="#con">Contacts</a></li>
+                            <li class="">
+                                <a href="#con">{{
+                                    $t('header.nav.contacts')
+                                }}</a>
+                            </li>
                             <li>
-                                <router-link :to="{ name: 'blog' }"
-                                    >Blog</router-link
-                                >
+                                <router-link :to="{ name: 'blog' }">{{
+                                    $t('header.nav.blog')
+                                }}</router-link>
                             </li>
                         </ul>
                     </div>
 
                     <div class="mobile-languages">
                         <ul>
-                            <li><a href="ro.html">Română</a></li>
-                            <li><a href="ru.html">Русский</a></li>
-                            <li><span>English</span></li>
+                            <li @click="switchLang('ro', $event)">Română</li>
+                            <li @click="switchLang('ru', $event)">Русский</li>
+                            <li
+                                @click="switchLang('en', $event)"
+                                class="active"
+                            >
+                                English
+                            </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="side_form form-bg">
-            <div class="side_container">
-                <div class="side_form_close">
-                    <span class="icon-close"></span>
-                </div>
-
-                <div class="form-content-area">
-                    <div class="modal-form">
-                        <div class="footer-form-area">
-                            <form>
-                                <input
-                                    name="form_type"
-                                    type="hidden"
-                                    value="feedback"
-                                />
-                                <div class="form-label">
-                                    <label>Name</label>
-                                    <input
-                                        class="form-control required"
-                                        name="name"
-                                        placeholder="What is your name"
-                                    /><span class="input-message"></span>
-                                </div>
-
-                                <div class="form-label">
-                                    <label>Phone number</label>
-                                    <input
-                                        class="form-control required"
-                                        name="phone"
-                                        placeholder="Your phone number"
-                                    /><span class="input-message"></span>
-                                </div>
-
-                                <div class="form-label">
-                                    <label>Email</label>
-                                    <input
-                                        class="form-control required"
-                                        name="email"
-                                        placeholder="Your email adress"
-                                    /><span class="input-message"></span>
-                                </div>
-
-                                <div class="form-label">
-                                    <label>Company name</label>
-                                    <input
-                                        class="form-control required"
-                                        name="company"
-                                        placeholder="Your company name"
-                                    /><span class="input-message"></span>
-                                </div>
-
-                                <div class="form-label textarea-label">
-                                    <label>message</label
-                                    ><textarea
-                                        class="message-scroll required"
-                                        name="message"
-                                        placeholder="Any questions"
-                                        rows="3"
-                                    ></textarea
-                                    ><span class="input-message"></span>
-                                </div>
-
-                                <div class="form-label">
-                                    <div class="form-button">
-                                        <button
-                                            class="modal-form-action"
-                                            type="button"
-                                        >
-                                            Submit
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -132,7 +67,7 @@
                     <div
                         class="logo d-flex align-items-center justify-content-between"
                     >
-                        <a class="d-flex align-items-center" href="index.htm"
+                        <a class="d-flex align-items-center" href="index.html"
                             ><img alt="Gamma" src="@/assets/logo.png"
                         /></a>
 
@@ -148,20 +83,28 @@
                     <nav class="navigation">
                         <ul>
                             <li class="active">
-                                <a href="#home">Home</a>
+                                <a href="#home">{{ $t('header.nav.home') }}</a>
                             </li>
                             <li class="">
-                                <a href="#card">Services</a>
+                                <a href="#card">{{
+                                    $t('header.nav.servives')
+                                }}</a>
                             </li>
                             <li class="">
-                                <a href="#slide">About us</a>
+                                <a href="#slide">{{
+                                    $t('header.nav.aboutus')
+                                }}</a>
                             </li>
 
-                            <li class=""><a href="#con">Contacts</a></li>
+                            <li class="">
+                                <a href="#con">{{
+                                    $t('header.nav.contacts')
+                                }}</a>
+                            </li>
                             <li>
-                                <router-link :to="{ name: 'blog' }"
-                                    >Blog</router-link
-                                >
+                                <router-link :to="{ name: 'blog' }">{{
+                                    $t('header.nav.blog')
+                                }}</router-link>
                             </li>
                         </ul>
                     </nav>
@@ -175,8 +118,9 @@
                             class="language d-flex align-items-center standart"
                             ref="lang"
                         >
-                            <a href="ro.html">Rom</a><a href="ru.html">Рус</a
-                            ><span @click="open">Eng</span>
+                            <li @click="switchLang('ro')">Rom</li>
+                            <li @click="switchLang('ru')">Рус</li>
+                            <li @click="switchLang('en')">Eng</li>
                         </div>
                     </div>
                 </div>
@@ -210,7 +154,7 @@
                 href="#card"
                 class="scroll-down d-flex align-items-center justify-content-center"
             >
-                <span class="down-text">Scroll down</span>
+                <span class="down-text">{{ t('header.scroll') }}</span>
                 <span class="icon-down"></span>
             </a>
         </div>
@@ -221,25 +165,27 @@
                     <div class="slider-content d-flex align-items-center">
                         <div class="slider-content-area">
                             <h2>
-                                We enjoy
-                                <span style="color: #f3b88e; font-weight: 600"
-                                    >challenges</span
+                                {{ t('header.title.main') }}
+                                <span
+                                    style="color: #f3b88e; font-weight: 600"
+                                    >{{ t('header.title.color') }}</span
                                 >
                             </h2>
 
                             <h3 style="font-style: normal">
-                                Developing individual transport solutions
-                                through&nbsp;logic approach.
+                                {{ t('header.subtitle') }}
                             </h3>
 
                             <ul>
                                 <li>
-                                    <a class="first" href="#card"
-                                        >OUR SERVICES</a
-                                    >
+                                    <a class="first" href="#card">{{
+                                        t('header.btn-main')
+                                    }}</a>
                                 </li>
                                 <li>
-                                    <a class="second" href="#con">CONTACT US</a>
+                                    <a class="second" href="#con">{{
+                                        t('header.btn-sec')
+                                    }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -258,6 +204,9 @@
 import { onMounted, ref } from 'vue'
 import { useBurgerStore } from '@/store'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+// eslint-disable-next-line
+const { t, locale } = useI18n({ useScope: 'global' })
 
 const lang = ref(null)
 const burger = useBurgerStore()
@@ -287,6 +236,14 @@ onMounted(() => {
     link(mobile)
 })
 
+const switchLang = (lang, event) => {
+    document
+        .querySelectorAll('.mobile-languages li')
+        .forEach((i) => i.classList.remove('active'))
+    event.target.classList.add('active')
+    locale.value = lang
+}
+
 const toggle = () => {
     document.body.classList.add('modal-open')
     burger.isActive = true
@@ -297,14 +254,30 @@ const close = () => {
     burger.isActive = false
     document.querySelector('.fs_menu_overlay').style = 'pointer-events: none;'
 }
-const open = () => {
-    lang.value.classList.toggle('open')
-}
 </script>
 
 <style lang="scss">
 @import '@/assets/css/main.css';
+li {
+    list-style: none;
+}
 
+.standart {
+    gap: 15px;
+
+    li {
+        padding: 10px;
+    }
+}
+
+.mobile-languages {
+    gap: 15px;
+
+    li {
+        padding: 10px;
+        cursor: pointer;
+    }
+}
 a {
     &:hover {
         text-decoration: none;

@@ -3,20 +3,21 @@
         <div class="container">
             <div class="oferte__inner">
                 <div class="oferte__title">
-                    Lorem ipsum dolor sit amet consectetur
+                    {{ $t('card.title') }}
                 </div>
                 <div class="oferte__subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quibusdam dolor alias iusto!
+                    {{ $t('card.subtitle') }}
                 </div>
                 <div class="oferte__row">
                     <div
                         class="oferte__column"
                         v-for="item in items"
-                        :key="item.title"
+                        :key="item.img"
                     >
                         <div class="oferte__item">
-                            <div class="oferte__name">{{ item.title }}</div>
+                            <div class="oferte__name">
+                                {{ $t(`card.card.${item.title}`) }}
+                            </div>
                             <img :src="item.img" :alt="item.title" />
                         </div>
                     </div>
@@ -31,23 +32,23 @@ import { ref } from 'vue'
 
 const items = ref([
     {
-        title: 'Import/Export services',
+        title: 'first',
         img: 'https://tvrm-s3.fra1.cdn.digitaloceanspaces.com/superdesk/2022100413108/20017f165b2b8dceb90c70e675548e510c519c873c524fc2121fe234f63304a0.jpg',
     },
     {
-        title: 'Brokerage Services',
+        title: 'second',
         img: 'https://www.picpedia.org/chalkboard/images/brokerage-services.jpg',
     },
     {
-        title: 'Cargo consolidation',
+        title: 'third',
         img: 'https://www.shiplilly.com/wp-content/uploads/2016/04/cargo-consolidation-846x551.jpeg',
     },
     {
-        title: 'Storage Services',
+        title: 'fourth',
         img: 'https://uploads-ssl.webflow.com/6109e4f8867aefa8bb6abba9/6184057e161a0765e802784a_fork-lift-moving-wooden-vaults.jpg-PacWest%20169%20Small.jpg',
     },
     {
-        title: 'Transport services with and without refrigerators',
+        title: 'five',
         img: 'https://www.airtecnics.com/media/webstructure/news/airtrack-recreation-installation-freezer-truck.jpg',
     },
 ])
