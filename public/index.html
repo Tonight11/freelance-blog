@@ -23,5 +23,13 @@
         </noscript>
         <div id="app"></div>
         <!-- built files will be auto injected -->
+        <script>
+            // Workaround stupid i18n console warning
+            Object.assign(window, {
+                __VUE_I18N_FULL_INSTALL__: true,
+                __INTLIFY_PROD_DEVTOOLS__: false,
+                __VUE_I18N_LEGACY_API__: true,
+            })
+        </script>
     </body>
 </html>

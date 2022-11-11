@@ -15,7 +15,6 @@ const i18n = createI18n({
     messages,
 })
 
-
 createApp(App, {
     setup() {
         const { t } = useI18n()
