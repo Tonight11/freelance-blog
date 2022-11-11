@@ -94,8 +94,7 @@
 
 @media (max-width: 900px) {
     .partners {
-        height: 100vh;
-        padding: 2% !important;
+        padding: 3.5% !important;
     }
     .partners-header {
         font-size: 2.5rem !important;
