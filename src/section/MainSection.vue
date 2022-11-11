@@ -237,10 +237,12 @@ onMounted(() => {
 })
 
 const switchLang = (lang, event) => {
-    document
-        .querySelectorAll('.mobile-languages li')
-        .forEach((i) => i.classList.remove('active'))
-    event.target.classList.add('active')
+    if (event !== undefined) {
+        document
+            .querySelectorAll('.mobile-languages li')
+            .forEach((i) => i.classList.remove('active'))
+        event.target.classList.add('active')
+    }
     locale.value = lang
 }
 
