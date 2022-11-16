@@ -38,13 +38,13 @@
         display: flex;
         flex-direction: column;
 
-        color: rgb(245, 69, 69);
+        color: #00a08a;
         max-width: 400px;
         text-align: center;
     }
 
     &__logo {
-        background-color: rgba(245, 69, 69, 0.7);
+        background-color: rgba(#00a08a, 0.7);
 
         padding: 20px;
         img {

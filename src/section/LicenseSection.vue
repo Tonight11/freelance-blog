@@ -40,7 +40,6 @@
     &__inner {
         display: flex;
         gap: 50px;
-        // justify-content: space-between;
 
         @media screen and (max-width: 998px) {
             flex-direction: column;
@@ -58,7 +57,7 @@
     &__title {
         display: inline-block;
         padding: 5px 10px 5px 20px;
-        background-color: #c00719;
+        background-color: #00a08a;
         font-size: 28px;
         margin-bottom: 40px;
     }

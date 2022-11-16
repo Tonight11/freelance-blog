@@ -172,7 +172,7 @@ const formSubmit = async () => {
     outline: none;
     cursor: pointer;
     color: #484d52;
-    border: 2px solid #484d52;
+    border: 2px solid #00a08a;
     display: -ms-flexbox;
     display: flex;
     width: 100%;

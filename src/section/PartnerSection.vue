@@ -1,35 +1,90 @@
 <template>
     <section id="awards" class="partners ptb5 plr5">
         <p class="partners-header block_header">{{ $t(`partner`) }}</p>
-        <div class="partners-flex_container wow rotateInUpLeft">
-            <img src="@/assets/partner/1.jpg" alt="" />
-            <img src="@/assets/partner/2.png" alt="" />
-            <img src="@/assets/partner/3.jpg" alt="" />
-            <img src="@/assets/partner/4.png" alt="" />
-        </div>
-        <div class="partners-flex_container wow rotateInUpLeft">
-            <img src="@/assets/partner/5.png" alt="" />
-            <img src="@/assets/partner/6.jpg" alt="" />
-            <img src="@/assets/partner/7.jpg" alt="" />
-            <img src="@/assets/partner/8.png" alt="" />
-        </div>
+        <swiper
+            class="swiper-main"
+            @swiper="Swiper"
+            @slideChange="SwiperSlide"
+            :slidesPerView="4"
+            :allow-touch-move="false"
+            :autoplay="{
+                delay: 1,
+                disableOnInteraction: true,
+            }"
+            :loop="true"
+            :speed="2500"
+            :modules="modules"
+        >
+            <swiper-slide>
+                <img src="@/assets/partner/1.jpg" alt="nike" />
+            </swiper-slide>
 
-        <div class="partners-mobile">
-            <img class="wow zoomIn" src="@/assets/partner/1.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/2.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/3.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/4.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/5.png" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/6.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/7.jpg" alt="" />
-            <img class="wow zoomIn" src="@/assets/partner/8.png" alt="" />
-        </div>
+            <swiper-slide>
+                <img src="@/assets/partner/2.png" alt="louis" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="@/assets/partner/3.jpg" alt="fendi" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="@/assets/partner/4.png" alt="fendi" />
+            </swiper-slide>
+        </swiper>
+        <swiper
+            class="swiper-main"
+            @swiper="Swiper"
+            @slideChange="SwiperSlide"
+            :slidesPerView="4"
+            dir="rtl"
+            :allow-touch-move="false"
+            :autoplay="{
+                delay: 1,
+                disableOnInteraction: true,
+            }"
+            :loop="true"
+            :speed="2500"
+            :modules="modules"
+        >
+            <swiper-slide>
+                <img src="@/assets/partner/5.png" alt="nike" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="@/assets/partner/6.jpg" alt="louis" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="@/assets/partner/7.jpg" alt="fendi" />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src="@/assets/partner/8.png" alt="fendi" />
+            </swiper-slide>
+        </swiper>
     </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, FreeMode } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/autoplay'
+
+const modules = [Autoplay, FreeMode]
+</script>
 
 <style lang="scss">
+.swiper-main {
+    margin-bottom: 20px;
+    pointer-events: none;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    pointer-events: none;
+}
 .block_header {
     font-size: 3rem;
     font-weight: 800;

@@ -63,7 +63,6 @@
 
     &__first {
         max-width: 700px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
         @media screen and (max-width: 1188px) {
             max-width: 100%;
 
@@ -83,7 +82,6 @@
     &__sec-adres {
         max-width: 220px;
         font-size: 16px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
         position: relative;
         @media screen and (max-width: 1188px) {
             max-width: 100%;

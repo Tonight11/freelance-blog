@@ -167,7 +167,7 @@
                             <h2>
                                 {{ t('header.title.main') }}
                                 <span
-                                    style="color: #f3b88e; font-weight: 600"
+                                    style="color: #00685a; font-weight: 600"
                                     >{{ t('header.title.color') }}</span
                                 >
                             </h2>
@@ -193,10 +193,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="main-services-new white-bg" style="margin-top: 50px">
-        <div class="ms-new-p load_services"></div>
     </section>
 </template>
 

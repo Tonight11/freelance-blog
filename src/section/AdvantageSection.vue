@@ -12,13 +12,15 @@
                         :key="item.icon"
                     >
                         <div class="advantage__item">
-                            <div class="advantage__name">
-                                {{ $t(`advantage.${item.title}.title`) }}
+                            <div class="advantage__info">
+                                <div class="advantage__name">
+                                    {{ $t(`advantage.${item.title}.title`) }}
+                                </div>
+                                <div class="advantage__text">
+                                    {{ $t(`advantage.${item.title}.text`) }}
+                                </div>
+                                <Icon :icon="item.icon" />
                             </div>
-                            <div class="advantage__text">
-                                {{ $t(`advantage.${item.title}.text`) }}
-                            </div>
-                            <Icon :icon="item.icon" />
                         </div>
                     </div>
                 </div>
@@ -75,11 +77,12 @@ const items = ref([
     }
 
     &__row {
-        padding: 50px;
         display: flex;
         flex-wrap: wrap;
-        row-gap: 20px;
-        margin: 0 -10px;
+        justify-content: center;
+        margin: 0 -1.5rem;
+        row-gap: 30px;
+        padding: 20px 0;
     }
 
     &__column {
@@ -96,20 +99,43 @@ const items = ref([
     }
 
     &__item {
-        padding: 20px;
-        border: 5px solid #ffcd00;
-        color: white;
+        position: relative;
+        width: 100%;
+        padding: 4rem 3rem;
+        border-radius: 5rem;
+        display: flex;
+        box-shadow: 0 0 5px #00a08a;
+        overflow: hidden;
+        height: 100%;
 
-        transition: all 0.3s linear;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150px;
+            height: 130%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: #00a08a;
+        }
 
-        &:hover {
-            transform: translate(-5px, -5px);
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            inset: 2px;
+            border-radius: 5rem;
         }
 
         svg {
             width: 45px;
             height: 45px;
         }
+    }
+
+    &__info {
+        position: relative;
+        z-index: 1;
     }
 
     &__name {
