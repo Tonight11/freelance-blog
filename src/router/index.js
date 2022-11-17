@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import { useBurgerStore } from '@/store'
+import { useMediaQuery } from '@vueuse/core'
+const isLargeScreen = useMediaQuery('(min-width: 992px)')
 
 const routes = [
     {
@@ -52,10 +54,17 @@ const router = createRouter({
         }
 
         if (to.hash) {
+            if (isLargeScreen.value) {
+                return {
+                    el: to.hash,
+                    behavior: 'smooth',
+                    top: 70,
+                }
+            }
             return {
                 el: to.hash,
                 behavior: 'smooth',
-                top: 70,
+                top: 100,
             }
         }
 

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@namchee/tetikus": "^0.4.2",
-    "@vueuse/core": "^9.4.0",
+    "@vueuse/core": "^9.5.0",
     "core-js": "^3.8.3",
     "gsap": "^3.11.3",
     "pinia": "^2.0.23",

@@ -26,9 +26,8 @@ const layouts = {
 </script>
 
 <style lang="scss">
-
 .tetikus {
-	z-index: 2500 !important;
+    z-index: 2500 !important;
 }
 
 *,
@@ -39,6 +38,13 @@ const layouts = {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        scroll-padding-top: 80px;
+    }
 }
 
 body.lock {
