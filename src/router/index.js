@@ -47,6 +47,8 @@ const router = createRouter({
         if (burgerMenu.isActive === true) {
             burgerMenu.toggle()
             document.body.classList.remove('modal-open')
+            document.querySelector('.fs_menu_overlay').style =
+                'pointer-events: none;'
         }
 
         if (to.hash) {
