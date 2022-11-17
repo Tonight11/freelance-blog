@@ -2,7 +2,7 @@
     <div class="contact">
         <div class="container">
             <div class="contact__inner">
-                <img src="@/assets/pp.jpg" alt="group" />
+                <img class="contact__img" src="@/assets/pp.jpg" alt="group" />
                 <div class="contact__content">
                     <h2 class="contact__title">{{ $t('contact.title') }}</h2>
                     <div class="contact__btns">
@@ -18,31 +18,33 @@
                     </div>
                 </div>
             </div>
-            <app-modal :visible="visible" @close="close">
-                <div class="lds-dual-ring" v-if="load === true"></div>
-                <form
-                    v-else-if="hello !== true"
-                    class="form"
-                    @submit.prevent="formSubmit"
-                >
-                    <input
-                        v-model="email"
-                        type="text"
-                        name="email"
-                        placeholder="Your name"
-                        required
-                    />
-                    <input
-                        v-model="tel"
-                        type="tel"
-                        name="phone"
-                        placeholder="Phone"
-                        required
-                    />
-                    <button class="btn" type="submit">Submit</button>
-                </form>
-                <div style="color: darkgreen" v-else>Success!!!</div>
-            </app-modal>
+            <teleport to="body">
+                <app-modal :visible="visible" @close="close">
+                    <div class="lds-dual-ring" v-if="load === true"></div>
+                    <form
+                        v-else-if="hello !== true"
+                        class="form"
+                        @submit.prevent="formSubmit"
+                    >
+                        <input
+                            v-model="email"
+                            type="text"
+                            name="email"
+                            placeholder="Your name"
+                            required
+                        />
+                        <input
+                            v-model="tel"
+                            type="tel"
+                            name="phone"
+                            placeholder="Phone"
+                            required
+                        />
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                    <div style="color: darkgreen" v-else>Success!!!</div>
+                </app-modal>
+            </teleport>
         </div>
     </div>
 </template>
@@ -50,6 +52,32 @@
 <script setup>
 import AppModal from '@/UI/AppModal.vue'
 import { ref } from 'vue'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+    const tl6 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.contact__inner',
+            start: 'top 80%',
+        },
+        defaults: { duration: 0.65 },
+    })
+
+    tl6.from('.contact__img', {
+        x: -100,
+        opacity: 0,
+    }).from(
+        '.contact__content',
+        {
+            x: 100,
+            opacity: 0,
+        },
+        '<'
+    )
+})
 
 const visible = ref(false)
 const load = ref(false)
@@ -112,9 +140,10 @@ const formSubmit = async () => {
 }
 
 .btn {
-    border: 2px solid #484d52;
+    border: 2px solid rgb(248, 248, 248);
     padding: 10px;
     transition: all 0.25s ease-in-out;
+    color: white;
 
     &:hover {
         opacity: 0.6;

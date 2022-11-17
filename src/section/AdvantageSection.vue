@@ -31,8 +31,10 @@
 
 <script setup>
 import { Icon } from '@iconify/vue'
-import { ref } from 'vue'
-
+import { ref, onMounted } from 'vue'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 const items = ref([
     {
         title: 'first',
@@ -59,14 +61,28 @@ const items = ref([
         icon: 'file-icons:sandbox',
     },
 ])
+
+onMounted(() => {
+    const tl4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.advantage__inner',
+            start: 'top 80%',
+        },
+        defaults: { duration: 0.45 },
+    })
+
+    tl4.from('.advantage__column', {
+        y: 75,
+        opacity: 0,
+        stagger: 0.3,
+    })
+})
 </script>
 
 <style lang="scss" scoped>
 .advantage {
     margin-top: 80px;
     background-color: #4c5a63;
-    &__inner {
-    }
 
     &__title {
         padding: 15px 0px 50px;
@@ -108,6 +124,11 @@ const items = ref([
         overflow: hidden;
         height: 100%;
 
+        @media screen and (max-width: 600px) {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -139,13 +160,13 @@ const items = ref([
     }
 
     &__name {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 800;
         margin-bottom: 10px;
     }
 
     &__text {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 300;
         margin-bottom: 100px;
     }

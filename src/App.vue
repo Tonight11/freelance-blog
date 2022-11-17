@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" v-cloak>
         <component :is="layouts[layout]"></component>
         <the-footer></the-footer>
     </div>
@@ -50,5 +50,9 @@ img {
         flex: 0 0 60%;
         max-width: 60%;
     }
+}
+
+[v-cloak] {
+    display: none;
 }
 </style>

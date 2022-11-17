@@ -44,6 +44,32 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination } from 'vue3-carousel'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+    const tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.main-about-content',
+            start: 'top 80%',
+        },
+        defaults: { duration: 0.65 },
+    })
+
+    tl2.from('.main-about-content', {
+        x: -100,
+        opacity: 0,
+    }).from(
+        '.main-about-slider',
+        {
+            x: 100,
+            opacity: 0,
+        },
+        '<'
+    )
+})
 </script>
 
 <style lang="scss">
@@ -60,6 +86,10 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel'
         width: 100%;
         height: 50px;
         background: #00a08a;
+
+        @media screen and (max-width: 997px) {
+            top: 5%;
+        }
     }
 }
 
@@ -88,9 +118,29 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel'
     &::after {
         left: 30px;
     }
+
+    @media screen and (max-width: 1100px) {
+        left: -10%;
+    }
+
+    @media screen and (max-width: 997px) {
+        left: -20%;
+        top: 5px;
+    }
+    @media screen and (max-width: 820px) {
+        left: -30%;
+        top: 5px;
+    }
+
+    @media screen and (max-width: 647px) {
+        display: none;
+    }
 }
 .title_slide {
     font-size: 32px;
+    @media screen and (max-width: 647px) {
+        padding-top: 10px;
+    }
 }
 
 .img {

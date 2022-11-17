@@ -31,7 +31,34 @@
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+    const tl3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.license__inner',
+            start: 'top 80%',
+        },
+        defaults: { duration: 0.65 },
+    })
+
+    tl3.from('.license__left', {
+        x: -100,
+        opacity: 0,
+    }).from(
+        '.license__img',
+        {
+            x: 100,
+            opacity: 0,
+        },
+        '<'
+    )
+})
+</script>
 
 <style lang="scss" scoped>
 .license {

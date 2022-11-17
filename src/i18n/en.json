@@ -82,6 +82,36 @@
         "textF": "FIND OUT FOR YOURSELF!",
         "textS": "YOUR POLITRANS LOGIST-TEAM"
     },
+    "answer": {
+        "title": "Main advantages of road transport",
+        "text": "At POLITRANS LOGIST, we have more than three decades of experience in commercial and freight transport, so we know in detail the advantages and the disadvantages of road transport. Here we give you the keys for you to evaluate and decide if this is the type of logistics that best suits your needs.",
+        "items": {
+            "first": {
+                "title": "It is the most profitable",
+                "text": "Road transport is the cheapest means of transport available. The main reason is that a truck is not as expensive as a ship or a place, and it does not require a large specific infrastructure such as ports, stations, or airports."
+            },
+            "sec": {
+                "title": "It is the fastest and most agile",
+                "text": "Although other means are faster, road transport is much more agile. The preparation of the shipment and the start-up of the service is much more immediate, and it makes it the most efficient option for short and medium distances of up to 2,500 km."
+            },
+            "th": {
+                "title": "Flexibility of schedules and volumes",
+                "text": "Planes, trains, or ships have a rigid pre-determined schedule and pre-fixed routes. Road transport, on the other hand, offers greater flexibility to adapt to delivery times and to adapt to delivery times and quantity of packages, with options such as groupage transport. Unlike air transport, which prohibits the transport of dangerous or special goods, road transport has no limitations. By truck it is possible to ship flammable or toxic products, cold products, heavy machinery, small packages, etc. (you name it!)"
+            },
+            "fourth": {
+                "title": "Maximum traceability",
+                "text": "GPS and new fleet management software make it easy to always locate and track goods. In addition to real-time information, this makes it possible to anticipate problems such as road closures or the arrival of storms."
+            },
+            "five": {
+                "title": "Door-to-door service",
+                "text": "The trailer loads the goods at the same dock of the company that carries out the shipment and unloads them with maximum guarantees at the destination warehouse. IT is a direct service that does not require other means, ideal for the transport of perishable goods."
+            },
+            "six": {
+                "title": "Easy paperwork",
+                "text": "Compared to sea or air transport, the paperwork involved in road transport is much simpler. The time spent at customs or on delivery of the goods is much shorter, streamlining the business supply chain."
+            }
+        }
+    },
     "footer": {
         "main": "We offer national and international freight transport services, logistics services, warehousing and customs clearance services for import and export."
     }

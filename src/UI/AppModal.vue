@@ -26,7 +26,7 @@ const closeModal = () => {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,11 +42,13 @@ const closeModal = () => {
     margin: auto;
     max-width: 600px;
     height: fit-content;
+    border-radius: 11px;
+    overflow: hidden;
     transform: none;
 
     padding: 100px;
-    background: #fff;
-    z-index: 999;
+    background: #00685a;
+    z-index: 1001;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -55,9 +57,12 @@ const closeModal = () => {
 .modal__cancel {
     cursor: pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     font-size: 18px;
+    padding: 8px;
+    border-bottom-left-radius: 11px;
+    background-color: #5dcfc0;
 }
 
 .pop-enter-active,

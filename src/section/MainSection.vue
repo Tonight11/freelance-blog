@@ -129,6 +129,7 @@
     </header>
     <section class="slider">
         <div
+            ref="slide"
             class="slider-social d-flex align-items-center d-none d-sm-none d-md-none d-lg-none d-xl-block"
         >
             <ul class="vertical-social">
@@ -164,7 +165,7 @@
                 <div class="container">
                     <div class="slider-content d-flex align-items-center">
                         <div class="slider-content-area">
-                            <h2>
+                            <h2 ref="title">
                                 {{ t('header.title.main') }}
                                 <span
                                     style="color: #00685a; font-weight: 600"
@@ -172,18 +173,18 @@
                                 >
                             </h2>
 
-                            <h3 style="font-style: normal">
+                            <h3 ref="text" style="font-style: normal">
                                 {{ t('header.subtitle') }}
                             </h3>
 
                             <ul>
                                 <li>
-                                    <a class="first" href="#card">{{
+                                    <a class="first main-btn" href="#card">{{
                                         t('header.btn-main')
                                     }}</a>
                                 </li>
                                 <li>
-                                    <a class="second" href="#con">{{
+                                    <a class="second main-btn" href="#con">{{
                                         t('header.btn-sec')
                                     }}</a>
                                 </li>
@@ -201,12 +202,20 @@ import { onMounted, ref } from 'vue'
 import { useBurgerStore } from '@/store'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { gsap } from 'gsap'
 // eslint-disable-next-line
 const { t, locale } = useI18n({ useScope: 'global' })
 
 const lang = ref(null)
 const burger = useBurgerStore()
 const route = useRoute()
+const title = ref()
+const text = ref()
+const slide = ref()
+const tl = gsap.timeline({
+	
+    defaults: { duration: 1 },
+})
 
 const link = (elements) => {
     elements.forEach((i) => {
@@ -219,6 +228,36 @@ const link = (elements) => {
 }
 
 onMounted(() => {
+    tl.from(title.value, {
+        x: -50,
+        opacity: 0,
+    })
+        .from(
+            text.value,
+            {
+                x: -50,
+                opacity: 0,
+            },
+            '-=.5'
+        )
+        .fromTo(
+            '.main-btn',
+            {
+                y: 50,
+                opacity: 0,
+            },
+            { y: 0, opacity: 1, stagger: 0.3 },
+            '-=1'
+        )
+        .from(
+            slide.value,
+            {
+                y: 100,
+                opacity: 0,
+            },
+            '-=1'
+        )
+
     const nav = document.querySelectorAll('.navigation li')
     const mobile = document.querySelectorAll('.mobile-menu li')
 
@@ -280,5 +319,9 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+.main-btn {
+    opacity: 0;
 }
 </style>

@@ -77,6 +77,4 @@ defineProps(['items'])
         }
     }
 }
-.btn {
-}
 </style>
