@@ -18,12 +18,18 @@
                                     Terminal Vamal Cricova Republica Moldova
                                     <br />
                                     Departament Transport <br />
-                                    <a href="tel:+37369994448">+373 69994448</a><br />
-                                    <a href="mailto:info@plt.md">info@plt.md</a> <br />
-                                    Departament Broker Vamal <br /><a href="tel:+37368006633">+373 68006633</a>
+                                    <a href="tel:+37369994448">+373 69994448</a
+                                    ><br />
+                                    <a href="mailto:info@plt.md">info@plt.md</a>
                                     <br />
-									<a href="mailto:broker@plt.md">broker@plt.md</a>
-                                    
+                                    Departament Broker Vamal <br /><a
+                                        href="tel:+37368006633"
+                                        >+373 68006633</a
+                                    >
+                                    <br />
+                                    <a href="mailto:broker@plt.md"
+                                        >broker@plt.md</a
+                                    >
                                 </p>
                             </div>
                         </div>
@@ -40,11 +46,12 @@
 
                                     Departament Transport
                                     <br />
-									<a href="tel:+40730271012">+40 730 271 012</a><br />
-                                    
+                                    <a href="tel:+40730271012"
+                                        >+40 730 271 012</a
+                                    ><br />
+
                                     <br />
-									<a href="mailto:info@plt.md">info@plt.md</a>
-                                    
+                                    <a href="mailto:info@plt.md">info@plt.md</a>
                                 </p>
                             </div>
                         </div>
@@ -80,6 +87,10 @@
 }
 .foot__info {
     color: black;
+
+    a {
+        pointer-events: all;
+    }
 }
 
 .foot__item {
