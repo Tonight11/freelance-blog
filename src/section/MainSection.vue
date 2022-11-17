@@ -10,7 +10,7 @@
         >
             <div class="side_container">
                 <div class="side_menu_close">
-                    <span class="icon-close" @click="close"></span>
+                    <span v-thover="{ scale: 1.5 }" class="icon-close" @click="close"></span>
                 </div>
 
                 <div class="side-content-area">
