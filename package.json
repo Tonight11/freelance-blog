@@ -9,6 +9,7 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src//i18n/**/*.json\""
   },
   "dependencies": {
+    "@namchee/tetikus": "^0.4.2",
     "@vueuse/core": "^9.4.0",
     "core-js": "^3.8.3",
     "gsap": "^3.11.3",

@@ -6,13 +6,25 @@
                 <div class="contact__content">
                     <h2 class="contact__title">{{ $t('contact.title') }}</h2>
                     <div class="contact__btns">
-                        <button @click="open" class="contact-btn">
+                        <button
+                            v-thover="{ scale: 1.5 }"
+                            @click="open"
+                            class="contact-btn"
+                        >
                             {{ $t('contact.customer') }}
                         </button>
-                        <button @click="open" class="contact-btn">
+                        <button
+                            v-thover="{ scale: 1.5 }"
+                            @click="open"
+                            class="contact-btn"
+                        >
                             {{ $t('contact.supplier') }}
                         </button>
-                        <button @click="open" class="contact-btn">
+                        <button
+                            v-thover="{ scale: 1.5 }"
+                            @click="open"
+                            class="contact-btn"
+                        >
                             {{ $t('contact.job') }}
                         </button>
                     </div>
@@ -40,7 +52,13 @@
                             placeholder="Phone"
                             required
                         />
-                        <button class="btn" type="submit">Submit</button>
+                        <button
+                            v-thover="{ scale: 1.5 }"
+                            class="btn"
+                            type="submit"
+                        >
+                            Submit
+                        </button>
                     </form>
                     <div style="color: darkgreen" v-else>Success!!!</div>
                 </app-modal>

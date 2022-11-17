@@ -25,7 +25,7 @@
             class="create__img"
         />
 
-        <button class="btn">Create</button>
+        <button v-thover="{ scale: 1.5 }" class="btn">Create</button>
     </form>
 </template>
 

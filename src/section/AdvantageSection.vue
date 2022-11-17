@@ -124,9 +124,15 @@ onMounted(() => {
         overflow: hidden;
         height: 100%;
 
+        transition: all 0.3s linear;
+
         @media screen and (max-width: 600px) {
             max-width: 300px;
             margin: 0 auto;
+        }
+
+        &:hover {
+            transform: translate(-10px, -10px);
         }
 
         &::before {

@@ -17,28 +17,32 @@
                     <div class="mobile-menu">
                         <ul>
                             <li class="active">
-                                <a href="#home">{{ $t('header.nav.home') }}</a>
+                                <a v-thover="{ scale: 1.5 }" href="#home">{{
+                                    $t('header.nav.home')
+                                }}</a>
                             </li>
                             <li class="">
-                                <a href="#card">{{
+                                <a v-thover="{ scale: 1.5 }" href="#card">{{
                                     $t('header.nav.servives')
                                 }}</a>
                             </li>
                             <li class="">
-                                <a href="#slide">{{
+                                <a v-thover="{ scale: 1.5 }" href="#slide">{{
                                     $t('header.nav.aboutus')
                                 }}</a>
                             </li>
 
                             <li class="">
-                                <a href="#con">{{
+                                <a v-thover="{ scale: 1.5 }" href="#con">{{
                                     $t('header.nav.contacts')
                                 }}</a>
                             </li>
                             <li>
-                                <router-link :to="{ name: 'blog' }">{{
-                                    $t('header.nav.blog')
-                                }}</router-link>
+                                <router-link
+                                    v-thover="{ scale: 1.5 }"
+                                    :to="{ name: 'blog' }"
+                                    >{{ $t('header.nav.blog') }}</router-link
+                                >
                             </li>
                         </ul>
                     </div>
@@ -67,7 +71,7 @@
                     <div
                         class="logo d-flex align-items-center justify-content-between"
                     >
-                        <a class="d-flex align-items-center" href="index.html"
+                        <a class="d-flex align-items-center"
                             ><img alt="Gamma" src="@/assets/logo.png"
                         /></a>
 
@@ -83,28 +87,32 @@
                     <nav class="navigation">
                         <ul>
                             <li class="active">
-                                <a href="#home">{{ $t('header.nav.home') }}</a>
+                                <a v-thover="{ scale: 1.5 }" href="#home">{{
+                                    $t('header.nav.home')
+                                }}</a>
                             </li>
                             <li class="">
-                                <a href="#card">{{
+                                <a v-thover="{ scale: 1.5 }" href="#card">{{
                                     $t('header.nav.servives')
                                 }}</a>
                             </li>
                             <li class="">
-                                <a href="#slide">{{
+                                <a v-thover="{ scale: 1.5 }" href="#slide">{{
                                     $t('header.nav.aboutus')
                                 }}</a>
                             </li>
 
                             <li class="">
-                                <a href="#con">{{
+                                <a v-thover="{ scale: 1.5 }" href="#con">{{
                                     $t('header.nav.contacts')
                                 }}</a>
                             </li>
                             <li>
-                                <router-link :to="{ name: 'blog' }">{{
-                                    $t('header.nav.blog')
-                                }}</router-link>
+                                <router-link
+                                    v-thover="{ scale: 1.5 }"
+                                    :to="{ name: 'blog' }"
+                                    >{{ $t('header.nav.blog') }}</router-link
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -134,14 +142,23 @@
         >
             <ul class="vertical-social">
                 <li>
-                    <span><a href="tel:+37368414448">+37368414448</a></span>
+                    <span
+                        ><a v-thover="{ scale: 1.5 }" href="tel:+37368414448"
+                            >+37368414448</a
+                        ></span
+                    >
                 </li>
                 <li class="d-none">
-                    <span><a href="#">TWITTER</a></span>
+                    <span
+                        ><a v-thover="{ scale: 1.5 }" href="#">TWITTER</a></span
+                    >
                 </li>
                 <li>
                     <span
-                        ><a href="mailto:office@plt.md" target="_blank"
+                        ><a
+                            v-thover="{ scale: 1.5 }"
+                            href="mailto:office@plt.md"
+                            target="_blank"
                             >office@plt.md</a
                         ></span
                     >
@@ -179,14 +196,20 @@
 
                             <ul>
                                 <li>
-                                    <a class="first main-btn" href="#card">{{
-                                        t('header.btn-main')
-                                    }}</a>
+                                    <a
+                                        v-thover="{ scale: 1.5 }"
+                                        class="first main-btn"
+                                        href="#card"
+                                        >{{ t('header.btn-main') }}</a
+                                    >
                                 </li>
                                 <li>
-                                    <a class="second main-btn" href="#con">{{
-                                        t('header.btn-sec')
-                                    }}</a>
+                                    <a
+                                        v-thover="{ scale: 1.5 }"
+                                        class="second main-btn"
+                                        href="#con"
+                                        >{{ t('header.btn-sec') }}</a
+                                    >
                                 </li>
                             </ul>
                         </div>
@@ -213,7 +236,6 @@ const title = ref()
 const text = ref()
 const slide = ref()
 const tl = gsap.timeline({
-	
     defaults: { duration: 1 },
 })
 

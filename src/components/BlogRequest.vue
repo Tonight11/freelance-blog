@@ -14,7 +14,7 @@
                     params: { id: items.id },
                 }"
             >
-                <button class="blog__btn btn" @click="navigate">Read</button>
+                <button v-thover="{ scale: 1.5 }" class="blog__btn btn" @click="navigate">Read</button>
             </router-link>
         </div>
     </div>

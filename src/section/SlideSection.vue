@@ -9,7 +9,7 @@
                         <strong>{{ $t('we.strong') }}</strong>
                     </p>
                     <p>{{ $t('we.text') }}</p>
-                    <a class="main-about-more" href="#con"
+                    <a v-thover="{ scale: 1.5 }" class="main-about-more" href="#con"
                         >{{ $t('we.btn') }} <span class="arrow-right"></span
                     ></a>
                 </div>

@@ -111,7 +111,7 @@ const modules = [Autoplay, FreeMode]
     color: black;
 }
 .partners-header::before {
-    background: #ce1414;
+    background: #00a08a;
     width: 20rem;
     opacity: 0.7;
     transform: translate(100%, -50%);

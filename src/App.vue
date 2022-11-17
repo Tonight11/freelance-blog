@@ -3,6 +3,7 @@
         <component :is="layouts[layout]"></component>
         <the-footer></the-footer>
     </div>
+    <tetikus borderColor="#00a08a" />
 </template>
 
 <script setup>
@@ -25,6 +26,11 @@ const layouts = {
 </script>
 
 <style lang="scss">
+
+.tetikus {
+	z-index: 2500 !important;
+}
+
 *,
 *::before,
 *::after {

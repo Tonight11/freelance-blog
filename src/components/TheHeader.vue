@@ -16,12 +16,16 @@
                     <div class="mobile-menu">
                         <ul>
                             <li>
-                                <router-link :to="{ name: 'home' }"
+                                <router-link
+                                    v-thover="{ scale: 1.5 }"
+                                    :to="{ name: 'home' }"
                                     >Home</router-link
                                 >
                             </li>
                             <li v-if="back">
-                                <router-link :to="{ name: 'blog' }"
+                                <router-link
+                                    v-thover="{ scale: 1.5 }"
+                                    :to="{ name: 'blog' }"
                                     >Back</router-link
                                 >
                             </li>
@@ -124,9 +128,11 @@
                     <div
                         class="logo d-flex align-items-center justify-content-between"
                     >
-                        <a class="d-flex align-items-center"
+                        <router-link
+                            :to="{ name: 'home' }"
+                            class="d-flex align-items-center"
                             ><img alt="Gamma" src="@/assets/logo.png"
-                        /></a>
+                        /></router-link>
 
                         <div
                             class="menu-button d-block d-sm-block d-md-block d-lg-none d-xl-"
@@ -140,12 +146,16 @@
                     <nav class="navigation">
                         <ul>
                             <li>
-                                <router-link :to="{ name: 'home' }"
+                                <router-link
+                                    v-thover="{ scale: 1.5 }"
+                                    :to="{ name: 'home' }"
                                     >Home</router-link
                                 >
                             </li>
                             <li v-if="back">
-                                <router-link :to="{ name: 'blog' }"
+                                <router-link
+                                    v-thover="{ scale: 1.5 }"
+                                    :to="{ name: 'blog' }"
                                     >Back</router-link
                                 >
                             </li>

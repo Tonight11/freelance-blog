@@ -9,7 +9,7 @@
             placeholder="Your password"
             required
         />
-        <button class="btn">Submit</button>
+        <button v-thover="{ scale: 1.5 }" class="btn">Submit</button>
     </form>
 </template>
 

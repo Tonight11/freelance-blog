@@ -5,6 +5,8 @@ import { createPinia } from 'pinia'
 import { languages } from './i18n'
 import { defaultLocale } from './i18n'
 import { createI18n, useI18n } from 'vue-i18n'
+import Tetikus from '@namchee/tetikus'
+import '@namchee/tetikus/dist/tetikus.css'
 
 const messages = Object.assign(languages)
 
@@ -22,6 +24,7 @@ createApp(App, {
     },
 })
     .use(i18n)
+    .use(Tetikus)
     .use(createPinia())
     .use(router)
     .mount('#app')
