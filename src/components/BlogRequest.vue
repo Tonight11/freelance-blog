@@ -77,7 +77,6 @@ defineProps(['items'])
         }
     }
 }
-
 .blog__btn {
     border-color: #00a08a;
     color: black;

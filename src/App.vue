@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" v-cloak>
+    <div class="wrapper">
         <component :is="layouts[layout]"></component>
         <the-footer></the-footer>
     </div>
@@ -45,14 +45,14 @@ img {
     height: auto;
 }
 
+.wrapper {
+    overflow-x: hidden;
+}
+
 @media screen and (min-width: 992px) {
     .col-lg-8 {
         flex: 0 0 60%;
         max-width: 60%;
     }
-}
-
-[v-cloak] {
-    display: none;
 }
 </style>
