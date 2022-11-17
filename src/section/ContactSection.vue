@@ -116,7 +116,7 @@ const close = () => {
 
 const formSubmit = async () => {
     load.value = true
-    fetch('https://formsubmit.co/ajax/tonight0bayastan@gmail.com', {
+    fetch('https://formsubmit.co/ajax/info@plt.md', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

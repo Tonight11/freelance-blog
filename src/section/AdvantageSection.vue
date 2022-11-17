@@ -79,7 +79,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .advantage {
     margin-top: 80px;
     background-color: #4c5a63;
