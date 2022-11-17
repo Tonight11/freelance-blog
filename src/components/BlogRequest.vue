@@ -14,7 +14,7 @@
                     params: { id: items.id },
                 }"
             >
-                <button class="btn" @click="navigate">Read</button>
+                <button class="blog__btn btn" @click="navigate">Read</button>
             </router-link>
         </div>
     </div>
@@ -76,5 +76,10 @@ defineProps(['items'])
             margin-bottom: 10px;
         }
     }
+}
+
+.blog__btn {
+    border-color: #00a08a;
+    color: black;
 }
 </style>
