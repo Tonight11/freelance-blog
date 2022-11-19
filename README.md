@@ -1,5 +1,8 @@
 # blog
 
+## multi-language web site (Eng,Rus,Ro) with gsap animation and creating a blog post with firebase.
+## To translate language i used vuei18n 
+
 ## Project setup
 ```
 npm install
