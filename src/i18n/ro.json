@@ -35,13 +35,12 @@
         "btn": "Contactează-ne"
     },
     "license": {
-        "title": " POLITRANS LOGIST Servicii de Calitate",
-        "first": "Our quality and environmental management system is certified according to DIN EN ISO 9001 and 14001 ",
-        "sec": "Video security in warehouses & GPS location of all vehicles ",
-        "third": "Certified Authorised Economic Operator (AEO F) ",
-        "fourth": "HACCP concept with risk assessment in compliance with legal requirements ",
-        "five": "Member of German logistics-industry security initiative Schutz-und Aktionsgemeinschaft zur Erhöhung der Sicherheit in der Spedition (s.a.f.e) ",
-        "six": "Regular employee training on all levels"
+        "title": "POLITRANS LOGIST Servicii de Calitate",
+        "first": "Sistemul nostru de management al calității și al mediului solicită în curând certificarea conform DIN EN ISO 9001 și 14001",
+        "sec": "Securitate video în depozite și localizare GPS a tuturor vehiculelor",
+        "third": "Operator Economic Autorizat Certificat (AEO F)",
+        "fourth": "Suntem membrul titular al Asociației Transportului Auto Internațional din Moldova si membru al Camerei de Comerț Moldo-Americane.",
+        "five": "Instruirea periodică a angajaților la toate nivelurile"
     },
     "advantage": {
         "title": "Inventăm soluții de lungă durată pentru lanțul de aprovizionare",
@@ -83,32 +82,32 @@
         "textS": "ECHIPA TA POLITRANS LOGIST"
     },
     "answer": {
-        "title": "Main advantages of road transport",
-        "text": "At POLITRANS LOGIST, we have more than three decades of experience in commercial and freight transport, so we know in detail the advantages and the disadvantages of road transport. Here we give you the keys for you to evaluate and decide if this is the type of logistics that best suits your needs.",
+        "title": "Principalele avantaje ale transportului rutier",
+        "text": "La POLITRANS LOGIST avem peste treizeci de ani de experiență în transportul comercial și de marfă, așa că cunoaștem în detaliu avantajele și dezavantajele transportului rutier. Aici vă oferim cheile pentru a putea evalua și decide dacă acesta este tipul de logistică care se potrivește cel mai bine nevoilor dumneavoastră.",
         "items": {
             "first": {
-                "title": "It is the most profitable",
-                "text": "Road transport is the cheapest means of transport available. The main reason is that a truck is not as expensive as a ship or a place, and it does not require a large specific infrastructure such as ports, stations, or airports."
+                "title": "Este cel mai profitabil mod",
+                "text": "Transportul rutier este cel mai ieftin mod de transport. Motivul principal este că un camion nu este la fel de scump ca o navă sau un loc fizic și nu necesită multă infrastructură specifică, cum ar fi porturi, gări sau aeroporturi."
             },
             "sec": {
-                "title": "It is the fastest and most agile",
-                "text": "Although other means are faster, road transport is much more agile. The preparation of the shipment and the start-up of the service is much more immediate, and it makes it the most efficient option for short and medium distances of up to 2,500 km."
+                "title": "Este cel mai rapid și mai flexibil mod",
+                "text": "Deși alte mijloace de transport sunt mai rapide, transportul rutier este mult mai manevrabil. Pregătirea pentru expediere și începerea service-ului este mult mai rapidă, ceea ce o face cea mai eficientă opțiune pentru distanțe scurte și medii de până la 2500 km."
             },
             "th": {
-                "title": "Flexibility of schedules and volumes",
-                "text": "Planes, trains, or ships have a rigid pre-determined schedule and pre-fixed routes. Road transport, on the other hand, offers greater flexibility to adapt to delivery times and to adapt to delivery times and quantity of packages, with options such as groupage transport. Unlike air transport, which prohibits the transport of dangerous or special goods, road transport has no limitations. By truck it is possible to ship flammable or toxic products, cold products, heavy machinery, small packages, etc. (you name it!)"
+                "title": "Flexibilitatea programelor și a volumelor",
+                "text": "Avioanele, trenurile sau navele au un program rigid predeterminat și rute prestabilite. Transportul rutier oferă multă flexibilitate pentru a se adapta la timpul de livrare și la numărul de colete, cu opțiuni precum grupaj. Spre deosebire de transportul aerian, care interzice transportul mărfurilor periculoase sau speciale, transportul rutier nu are restricții. Transportul rutier poate transporta produse inflamabile sau toxice, alimente reci, echipamente grele, pachete mici etc. (orice ar fi!)"
             },
             "fourth": {
-                "title": "Maximum traceability",
-                "text": "GPS and new fleet management software make it easy to always locate and track goods. In addition to real-time information, this makes it possible to anticipate problems such as road closures or the arrival of storms."
+                "title": "Trasabilitate maximă",
+                "text": "GPS-ul și noul software de gestionare a flotei facilitează găsirea și urmărirea produselor. Pe lângă informațiile în timp real, acest lucru vă permite să anticipați probleme precum închiderea drumurilor sau apropierea de furtuni."
             },
             "five": {
-                "title": "Door-to-door service",
-                "text": "The trailer loads the goods at the same dock of the company that carries out the shipment and unloads them with maximum guarantees at the destination warehouse. IT is a direct service that does not require other means, ideal for the transport of perishable goods."
+                "title": "Service Door-to-door",
+                "text": "Remorca încarcă marfa la același doc al firmei care efectuează expediția și o descarcă cu maxime garanții la depozitul de destinație. Este un serviciu direct care nu necesită alte mijloace, ideal pentru transportul mărfurilor perisabile."
             },
             "six": {
-                "title": "Easy paperwork",
-                "text": "Compared to sea or air transport, the paperwork involved in road transport is much simpler. The time spent at customs or on delivery of the goods is much shorter, streamlining the business supply chain."
+                "title": "Înregistrarea documentelor în format simplificat",
+                "text": "În comparație cu transportul maritim sau aerian, actele asociate transportului rutier sunt mult mai ușoare. Timpul petrecut în vamă sau livrând mărfuri este mult redus, ceea ce simplifică lanțul de aprovizionare pentru întreprinderi."
             }
         }
     },

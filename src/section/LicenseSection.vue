@@ -21,9 +21,6 @@
                     <div class="license__def-text">
                         {{ $t('license.five') }}
                     </div>
-                    <div class="license__un-text">
-                        {{ $t('license.six') }}
-                    </div>
                 </div>
                 <img class="license__img" src="@/assets/slider3.jpg" alt="" />
             </div>

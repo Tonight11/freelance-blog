@@ -5,7 +5,7 @@
             class="swiper-main"
             @swiper="Swiper"
             @slideChange="SwiperSlide"
-            :slidesPerView="4"
+            :slidesPerView="7"
             :allow-touch-move="false"
             :autoplay="{
                 delay: 1,
@@ -30,12 +30,20 @@
             <swiper-slide>
                 <img src="@/assets/partner/4.png" alt="fendi" />
             </swiper-slide>
+            <swiper-slide>
+                <img src="@/assets/partner/9.jpg" alt="fendi" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="@/assets/partner/10.png" alt="fendi" /> </swiper-slide
+            ><swiper-slide>
+                <img src="@/assets/partner/11.png" alt="fendi" />
+            </swiper-slide>
         </swiper>
         <swiper
             class="swiper-main"
             @swiper="Swiper"
             @slideChange="SwiperSlide"
-            :slidesPerView="4"
+            :slidesPerView="8"
             dir="rtl"
             :allow-touch-move="false"
             :autoplay="{
@@ -60,6 +68,18 @@
 
             <swiper-slide>
                 <img src="@/assets/partner/8.png" alt="fendi" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="@/assets/partner/12.png" alt="fendi" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="@/assets/partner/13.png" alt="fendi" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="@/assets/partner/14.png" alt="fendi" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="@/assets/partner/15.png" alt="fendi" />
             </swiper-slide>
         </swiper>
     </section>

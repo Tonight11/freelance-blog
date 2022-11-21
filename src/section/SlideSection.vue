@@ -9,7 +9,10 @@
                         <strong>{{ $t('we.strong') }}</strong>
                     </p>
                     <p>{{ $t('we.text') }}</p>
-                    <a v-thover="{ scale: 1.5 }" class="main-about-more" href="#con"
+                    <a
+                        v-thover="{ scale: 1.5 }"
+                        class="main-about-more"
+                        href="#con"
                         >{{ $t('we.btn') }} <span class="arrow-right"></span
                     ></a>
                 </div>
@@ -151,7 +154,7 @@ onMounted(() => {
 }
 
 .first {
-    background-image: url('@/assets/1.png');
+    background-image: url('@/assets/1.jpg');
 }
 
 .main-about {

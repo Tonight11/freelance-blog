@@ -35,13 +35,12 @@
         "btn": "Свяжитесь с нами"
     },
     "license": {
-        "title": "POLITRANS LOGIST Качественные услуги",
-        "first": "Our quality and environmental management system is certified according to DIN EN ISO 9001 and 14001 ",
-        "sec": "Video security in warehouses & GPS location of all vehicles ",
-        "third": "Certified Authorised Economic Operator (AEO F) ",
-        "fourth": "HACCP concept with risk assessment in compliance with legal requirements ",
-        "five": "Member of German logistics-industry security initiative Schutz-und Aktionsgemeinschaft zur Erhöhung der Sicherheit in der Spedition (s.a.f.e) ",
-        "six": "Regular employee training on all levels"
+        "title": "POLITRANS LOGIST Услуги Высокого Качества",
+        "first": "Наша система управления качеством и окружающей средой очень скоро запрашивает сертификацию в соответствии с DIN EN ISO 9001 и 14001.",
+        "sec": "Видеонаблюдение на складах и GPS-локация всех транспортных средств",
+        "third": "Сертифицированный уполномоченный экономический оператор (AEO F)",
+        "fourth": "Мы являемся полноправным членом Ассоциации международных автомобильных перевозчиков Молдовы и членом Молдавско-американской торговой палаты.",
+        "five": "Регулярное обучение сотрудников на всех уровнях"
     },
     "advantage": {
         "title": "Мы изобретаем надежные решения для цепочки поставок",
@@ -83,32 +82,32 @@
         "textS": "ВАША POLITRANS LOGIST-КОМАНДА"
     },
     "answer": {
-        "title": "Main advantages of road transport",
-        "text": "At POLITRANS LOGIST, we have more than three decades of experience in commercial and freight transport, so we know in detail the advantages and the disadvantages of road transport. Here we give you the keys for you to evaluate and decide if this is the type of logistics that best suits your needs.",
+        "title": "Основные преимущества автомобильного транспорта",
+        "text": "В POLITRANS LOGIST мы имеем более чем тридцатилетний опыт коммерческих и грузовых перевозок, поэтому мы детально знаем преимущества и недостатки автомобильных перевозок. Здесь мы даем вам ключи, чтобы вы могли оценить и решить, тот ли это тип логистики, который наилучшим образом соответствует вашим потребностям.",
         "items": {
             "first": {
-                "title": "It is the most profitable",
-                "text": "Road transport is the cheapest means of transport available. The main reason is that a truck is not as expensive as a ship or a place, and it does not require a large specific infrastructure such as ports, stations, or airports."
+                "title": "Это самый выгодный способ",
+                "text": "Автомобильный транспорт является самым дешевым видом транспорта. Основная причина в том, что грузовик стоит не так дорого, как корабль или место, и не требует большой специфической инфраструктуры, такой как порты, вокзалы или аэропорты."
             },
             "sec": {
-                "title": "It is the fastest and most agile",
-                "text": "Although other means are faster, road transport is much more agile. The preparation of the shipment and the start-up of the service is much more immediate, and it makes it the most efficient option for short and medium distances of up to 2,500 km."
+                "title": "Это самый быстрый и маневренный способ",
+                "text": "Хотя другие средства передвижения быстрее, автомобильный транспорт гораздо маневреннее. Подготовка к отгрузке и начало обслуживания выполняются гораздо быстрее, что делает его наиболее эффективным вариантом для коротких и средних расстояний до 2500 км."
             },
             "th": {
-                "title": "Flexibility of schedules and volumes",
-                "text": "Planes, trains, or ships have a rigid pre-determined schedule and pre-fixed routes. Road transport, on the other hand, offers greater flexibility to adapt to delivery times and to adapt to delivery times and quantity of packages, with options such as groupage transport. Unlike air transport, which prohibits the transport of dangerous or special goods, road transport has no limitations. By truck it is possible to ship flammable or toxic products, cold products, heavy machinery, small packages, etc. (you name it!)"
+                "title": "Гибкость графиков и объемов",
+                "text": "Самолеты, поезда или корабли имеют жесткое заранее определенное расписание и заранее установленные маршруты. Автомобильный транспорт предлагает большую гибкость, чтобы адаптироваться к срокам доставки и к количеству посылок, с такими опциями, как перевозка сборных грузов. В отличие от воздушного транспорта, который запрещает перевозку опасных или специальных грузов, автомобильный транспорт не имеет ограничений. Автомобильным транспортом можно перевозить легковоспламеняющиеся или токсичные продукты, холодные продукты, тяжелую технику, небольшие упаковки и т. д. (что угодно!)"
             },
             "fourth": {
-                "title": "Maximum traceability",
-                "text": "GPS and new fleet management software make it easy to always locate and track goods. In addition to real-time information, this makes it possible to anticipate problems such as road closures or the arrival of storms."
+                "title": "Максимальная прослеживаемость",
+                "text": "GPS и новое программное обеспечение для управления автопарком упрощают поиск и отслеживание товаров. В дополнение к информации в режиме реального времени это позволяет предвидеть такие проблемы, как перекрытие дорог или приближение шторма."
             },
             "five": {
-                "title": "Door-to-door service",
-                "text": "The trailer loads the goods at the same dock of the company that carries out the shipment and unloads them with maximum guarantees at the destination warehouse. IT is a direct service that does not require other means, ideal for the transport of perishable goods."
+                "title": "Обслуживание от двери до двери",
+                "text": "Трейлер загружает товар в тот же док компании, которая осуществляет отгрузку и выгружает его с максимальными гарантиями на складе назначения. Это прямая услуга, не требующая других средств, идеально подходящая для перевозки скоропортящихся грузов."
             },
             "six": {
-                "title": "Easy paperwork",
-                "text": "Compared to sea or air transport, the paperwork involved in road transport is much simpler. The time spent at customs or on delivery of the goods is much shorter, streamlining the business supply chain."
+                "title": "Простое оформление документов",
+                "text": "По сравнению с морским или воздушным транспортом оформление документов, связанных с автомобильным транспортом, намного проще. Время, затрачиваемое на таможню или доставку товаров, значительно сокращается, что упрощает цепочку поставок для бизнеса."
             }
         }
     },
